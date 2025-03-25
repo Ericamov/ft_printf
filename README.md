@@ -4,15 +4,19 @@ ft_printf is a custom C implementation of the standard `printf()` function. This
 
 ## 🔧 Features
 
-- ✅ **Handles multiple format specifiers:**
-  - `%c` → Prints a single character
-  - `%s` → Prints a string
-  - `%p` → Prints a pointer in hexadecimal
-  - `%d` / `%i` → Prints integers (base 10)
-  - `%u` → Prints unsigned integers
-  - `%x` / `%X` → Prints hexadecimal numbers (lowercase/uppercase)
-  - `%%` → Prints a percent sign
-- ✅ **Supports variadic arguments (`va_list`)** for flexible input handling
+**Handles multiple format specifiers:**
+
+- `%c` → Prints a single character
+- `%s` → Prints a string
+- `%p` → Prints a pointer in hexadecimal
+- `%d` / `%i` → Prints integers (base 10)
+- `%u` → Prints unsigned integers
+- `%x` / `%X` → Prints hexadecimal numbers (lowercase/uppercase)
+- `%%` → Prints a percent sign
+
+**Variadic Function Handling:**
+
+Uses `stdarg.h` functions (`va_start`, `va_arg`, `va_end`) to process a variable number of arguments.
 
 ## ⚡ How It Works
 
