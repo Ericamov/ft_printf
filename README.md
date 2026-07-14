@@ -1,31 +1,22 @@
-# ft_printf – A Custom Implementation of printf()
+# 42 – ft_printf
 
-ft_printf is a custom C implementation of the standard `printf()` function. This project explores variadic functions and formatted output, making it a great way to deepen your understanding of C programming.
+## Description
 
-## 🔧 Features
+**ft_printf** is a 42 project that recreates the standard C `printf` function. It supports the mandatory conversion specifiers while providing a deeper understanding of variadic functions, formatted output, and low-level character handling.
 
-**Handles multiple format specifiers:**
+## How it works
 
-- `%c` → Prints a single character
-- `%s` → Prints a string
-- `%p` → Prints a pointer in hexadecimal
-- `%d` / `%i` → Prints integers (base 10)
-- `%u` → Prints unsigned integers
-- `%x` / `%X` → Prints hexadecimal numbers (lowercase/uppercase)
-- `%%` → Prints a percent sign
+The program:
 
-**Variadic Function Handling:**
+- Parses a format string character by character
+- Supports the mandatory conversion specifiers (%c, %s, %p, %d, %i, %u, %x, %X, and %%)
+- Processes a variable number of arguments using the `stdarg.h` library
+- Prints the formatted output while returning the number of characters written
 
-Uses `stdarg.h` functions (`va_start`, `va_arg`, `va_end`) to process a variable number of arguments.
+## Concepts
 
-## ⚡ How It Works
-
-ft_printf mimics the behavior of the original `printf()` without implementing its buffer management. It processes format strings, extracts arguments, and prints formatted output accordingly.
-
-## 🎯 Why It's Useful
-
-Understanding how printf() works internally strengthens the knowledge of function pointers, memory handling, and formatted output.
-
-## 📜 License
-
-This project is part of the 42 school curriculum.
+- Variadic functions
+- Format string parsing
+- Integer conversion
+- Character and string manipulation
+- Static libraries
